@@ -17,7 +17,7 @@ public class ClientSocket {
         CommonResult commonResult = new CommonResult();
 
         try{
-            clientsocket = new Socket(InetAddress.getByName("47.98.124.194"),5000);
+            clientsocket = new Socket(InetAddress.getByName("服务端IP地址"),5000);
             Log.i(TAG, "连接上服务器");
             ObjectOutputStream oos = new ObjectOutputStream(clientsocket.getOutputStream());
             ObjectInputStream ois = new ObjectInputStream(clientsocket.getInputStream());
