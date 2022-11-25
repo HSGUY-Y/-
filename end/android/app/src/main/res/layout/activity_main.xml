@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/imagebtn" />
+
+            <TextView
+                android:id="@+id/log"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="TickTalk"
+                android:textColor="#FFAB00"
+                android:textSize="25dp"
+                app:fontFamily="sans-serif-black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/deFault"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:paddingRight="30dp"
+                    android:text="聊天"
+                    android:textColor="@drawable/text"
+                    app:fontFamily="sans-serif-black" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/conn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DD2C00"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="Error:网络连接出错—请检查网络"
+            android:textColor="#FFFAFA"
+            app:fontFamily="sans-serif-black" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_weight="1"
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/chat"
+                android:layout_width="115dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                app:srcCompat="@drawable/chat_change" />
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingRight="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/messageSign"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:background="@drawable/ring"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:text="99" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/contact"
+                android:layout_width="115dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                app:srcCompat="@drawable/contact" />
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingRight="5dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/messageSign1"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:background="@drawable/ring"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:text="99" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/person"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                app:srcCompat="@drawable/person" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

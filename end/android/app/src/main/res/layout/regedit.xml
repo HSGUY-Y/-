@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/conn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DD2C00"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="Error:网络连接出错—请检查网络"
+        android:textColor="#FFFAFA"
+        app:fontFamily="sans-serif-black" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/imagebtn" />
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="TickTalk"
+            android:textColor="#FFAB00"
+            android:textSize="25dp"
+            app:fontFamily="sans-serif-black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl">
+
+            <TextView
+                android:id="@+id/deFault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="30dp"
+                android:gravity="right"
+                android:text="注册"
+                android:textColor="@drawable/text"
+                app:fontFamily="sans-serif-black"
+                android:clickable="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="80dp"
+    android:background="@drawable/underline"
+    android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/accText"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="手机号"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif-black" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:ems="11"
+        android:hint="请填写11位手机号"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:imeOptions="actionDone"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/underline"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="邮箱"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif-black" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="11"
+            android:hint="请填写邮箱"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            android:imeOptions="actionDone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/underline"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/sexText"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="性别"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif-black" />
+
+        <RadioGroup
+            android:id="@+id/sexGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/man"
+                android:layout_width="149dp"
+                android:layout_height="50dp"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/woman"
+                android:layout_width="149dp"
+                android:layout_height="50dp"
+                android:text="女" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/underline"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/psText"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="密码"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif-black" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="11"
+            android:inputType="textPassword"
+            android:hint="请填写密码"
+            android:selectAllOnFocus="true"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/underline"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/repsText"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确认密码"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif-black" />
+
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="11"
+            android:inputType="textPassword"
+            android:hint="请再次填写密码"
+            android:selectAllOnFocus="true"
+            android:imeOptions="actionDone" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/underline"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/inviteText"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="邀请码"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif-black" />
+
+        <EditText
+            android:id="@+id/inviteCode"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="11"
+            android:hint="请填写4位邀请码"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            android:imeOptions="actionDone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/regedit"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            app:fontFamily="sans-serif-black"
+            android:text="注册" />
+    </LinearLayout>
+
+</LinearLayout>

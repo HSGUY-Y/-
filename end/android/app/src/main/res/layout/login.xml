@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/conn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DD2C00"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="Error:网络连接出错—请检查网络"
+        android:textColor="#FFFAFA"
+        app:fontFamily="sans-serif-black" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/imagebtn" />
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="TickTalk"
+            android:textColor="#FFAB00"
+            android:textSize="25dp"
+            app:fontFamily="sans-serif-black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl">
+
+            <TextView
+                android:id="@+id/deFault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="登录"
+                android:paddingRight="30dp"
+                android:textColor="@drawable/text"
+                app:fontFamily="sans-serif-black"
+                android:clickable="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/underline"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/accText"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="账号"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif-black" />
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="11"
+            android:hint="TickTalk号/手机号/邮箱"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            android:imeOptions="actionDone"/>
+    </LinearLayout>
+<!-- 最后俩句，再次获得焦点时，全选输入框内容，
+不管后面是否还有输入框，输入法的回车键都是完成输入而不跳到下一输入框   -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/underline"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/psText"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="密码"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif-black" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="11"
+            android:inputType="textPassword"
+            android:hint="请填写密码"
+            android:selectAllOnFocus="true"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            app:fontFamily="sans-serif-black"
+            android:text="登录" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/notFoundPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="忘记密码？"
+            android:textColor="@drawable/text"
+            android:clickable="true"/>
+<!--  最后一句，允许点击      -->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+<!--     最后一句，设置控件布局从右边开始       -->
+
+            <TextView
+                android:id="@+id/regedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="注册TikTalk"
+                android:textColor="@drawable/text"
+                android:clickable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

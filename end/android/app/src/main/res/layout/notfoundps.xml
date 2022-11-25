@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/conn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DD2C00"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="Error:网络连接出错—请检查网络"
+        android:textColor="#FFFAFA"
+        app:fontFamily="sans-serif-black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/deFault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:paddingLeft="30dp"
+                android:text="找回密码"
+                android:textColor="@drawable/text"
+                app:fontFamily="sans-serif-black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="TickTalk"
+            android:textColor="#FFAB00"
+            android:textSize="25dp"
+            app:fontFamily="sans-serif-black" />
+
+        <ImageButton
+            android:id="@+id/icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/imagebtn" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/underline"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/accText"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="账号"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif-black" />
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="11"
+            android:hint="TickTalk账号"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            android:imeOptions="actionDone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/next"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            app:fontFamily="sans-serif-black"
+            android:text="下一步" />
+    </LinearLayout>
+</LinearLayout>
