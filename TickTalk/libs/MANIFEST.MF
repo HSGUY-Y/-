@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Sealed: true
+Class-Path: libs/mysql-connector-java-8.0.30.jar 
+Main-Class: com.socket.TickTalkSocket
